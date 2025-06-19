@@ -203,6 +203,7 @@ h1 {
 /* === hero === */
 
 .hero {
+    max-width: 1200px;
     padding: 0 72px;
     background-color: var(--violet);
     background-image:linear-gradient(rgba(30, 24, 35, 0.4),
@@ -211,7 +212,7 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 30px;
-    margin-bottom: 72px;
+    margin: 0 auto 72px auto;
 }
 
 .hero-container {
@@ -486,4 +487,72 @@ h1 {
 
 .testimonials .container {
     padding: 0;
+}
+
+.testimonials .section-heading {
+    margin-bottom: 91px;
+}
+
+.testimonials-list {
+    display: flex;
+    gap: 56px;
+}
+
+.testimonials-list-item {
+    position: relative;
+    width: calc((100% - 56px) / 3);
+    background-color: var(--white);
+    border: 1px solid rgba(17, 17, 17, 0.1);;
+    border-radius: 15px;
+    box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+    padding: 56px 24px 28px;
+}
+
+.testimonials-list-heading {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
+    color: var(--black);
+
+    margin-bottom: 20px;
+}
+
+.testimonials .paragraph {
+    color: rgba(17, 17, 17, 0.7);
+    text-align: center;
+}
+
+.review-btn {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--black);
+    background-color: transparent;
+    border: 1px solid var(--orange);
+    border-radius: 100px;
+    padding: 14px 40px;
+    margin: 50px auto 0 auto;
+
+    transition: color 250ms ease-in-out,
+                background-color 250ms ease-in-out;
+}
+
+.review-btn:hover {
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+.list-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
 }

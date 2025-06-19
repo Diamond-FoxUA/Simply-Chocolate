@@ -1,7 +1,6 @@
 @media screen and (min-resolution: 2x) {
-    hero {
-        background-image: linear-gradient(rgba(30, 24, 35, 0.4),
-                rgba(30, 24, 35, 0.4)),
-            url(../images/hero/hero-background@2x-min.jpg);
+    .hero {
+        background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)),
+                          url(../images/hero/hero-background@2x-min.jpg);
     }
 }
